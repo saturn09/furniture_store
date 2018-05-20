@@ -8,9 +8,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <html>
 <head>
     <title>Yutariya</title>
-    {% load static %}
-    <link href={% static "css/bootstrap.css" %} rel='stylesheet' type='text/css'/>
-    <link href={% static "css/style.css" %} rel='stylesheet' type='text/css'/>
+    {% load static from staticfiles %}
+    <link href={% static "shop/css/bootstrap.css" %} rel='stylesheet' type='text/css'/>
+    <link href={% static "shop/css/style.css" %} rel='stylesheet' type='text/css'/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
@@ -21,12 +21,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     function hideURLbar() {
         window.scrollTo(0, 1);
     } </script>
-    <script src={% static "js/jquery.min.js" %}></script>
+    <script src={% static "shop/js/jquery.min.js" %}></script>
     <!--<script src="js/jquery.easydropdown.js"></script>-->
     <!--start slider -->
-    <link rel="stylesheet" href={% static "css/fwslider.css" %} media="all">
-    <script src={% static "js/jquery-ui.min.js" %}></script>
-    <script src={% static "js/fwslider.js" %}></script>
+    <link rel="stylesheet" href={% static "shop/css/fwslider.css" %} media="all">
+    <script src={% static "shop/js/jquery-ui.min.js" %}></script>
+    <script src={% static "shop/js/fwslider.js" %}></script>
     <!--end slider -->
     <script type="text/javascript">
         $(document).ready(function () {
@@ -67,20 +67,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <div class="col-md-12">
                 <div class="header-left">
                     <div class="logo">
-                        <a href="/shop/index/"><img src={% static "images/logo.png" %} alt=""/></a>
+                        <a href="/shop/index/"><img src={% static "shop/img_src/sofa_64.png" %} alt=""/></a>
                     </div>
                     <div class="menu">
-                        <a class="toggleMenu" href="#"><img src={% static "images/nav.png" %} alt=""/></a>
+                        <a class="toggleMenu" href="#"><img src={% static "shop/images/nav.png" %} alt=""/></a>
                         <ul class="nav" id="nav">
-                            <li><a href="shop.html">Shop</a></li>
-                            <li><a href="team.html">Team</a></li>
-                            <li><a href="experiance.html">Events</a></li>
-                            <li><a href="experiance.html">Experiance</a></li>
-                            <li><a href="shop.html">Company</a></li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="shop.html">Магазин</a></li>
+                            <li><a href="shop.html">Компания</a></li>
+                            <li><a href="contact.html">Контакты</a></li>
                             <div class="clear"></div>
                         </ul>
-                        <script type="text/javascript" src={% static "js/responsive-nav.js" %}></script>
+                        <script type="text/javascript" src={% static "shop/js/responsive-nav.js" %}></script>
                     </div>
                     <div class="clear"></div>
                 </div>
@@ -97,8 +94,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         </div>
                     </div>
                     <!----search-scripts---->
-                    <script src={% static "js/classie.js" %}></script>
-                    <script src={% static "js/uisearch.js" %}></script>
+                    <script src={% static "shop/js/classie.js" %}></script>
+                    <script src={% static "shop/js/uisearch.js" %}></script>
                     <script>
                         new UISearch(document.getElementById('sb-search'));
                     </script>
@@ -107,11 +104,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         <li><a class="active-icon c1" href="#"> </a>
                             <ul class="sub-icon1 list">
                                 <div class="product_control_buttons">
-                                    <a href="#"><img src={% static "images/edit.png" %} alt=""/></a>
-                                    <a href="#"><img src={% static "images/close_edit.png" %} alt=""/></a>
+                                    <a href="#"><img src={% static "shop/images/edit.png" %} alt=""/></a>
+                                    <a href="#"><img src={% static "shop/images/close_edit.png" %} alt=""/></a>
                                 </div>
                                 <div class="clear"></div>
-                                <li class="list_img"><img src={% static "images/1.jpg" %} alt=""/></li>
+                                <li class="list_img"><img src={% static "shop/images/1.jpg" %} alt=""/></li>
                                 <li class="list_desc"><h4><a href="#">velit esse molestie</a></h4><span class="actual">1 x
                           $12.00</span></li>
                                 <div class="login_buttons">
@@ -135,26 +132,26 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div class="slider_container">
             <div class="slide">
                 <!-- Slide image -->
-                <img src={% static "img_src/guide-fend-shui-color-33.jpg" %} class="img-responsive" alt=""/>
+                <img src={% static "shop/img_src/guide-fend-shui-color-33.jpg" %} class="img-responsive" alt=""/>
                 <!-- /Slide image -->
                 <!-- Texts container -->
                 <div class="slide_content">
                     <div class="slide_content_wrap">
                         <!-- Text title -->
-                        <h1 class="title">Best furniture<br>Everything</h1>
+                        <h1 class="title">Лучшая мебель</h1>
                         <!-- /Text title -->
-                        <div class="button"><a href="#">See Details</a></div>
+                        <div class="button"><a href="#">Смотреть детали</a></div>
                     </div>
                 </div>
                 <!-- /Texts container -->
             </div>
             <!-- /Duplicate to create more slides -->
             <div class="slide">
-                <img src={% static "img_src/sofa-para-sala-pequena-22-1.jpg" %} class="img-responsive" alt=""/>
+                <img src={% static "shop/img_src/sofa-para-sala-pequena-22-1.jpg" %} class="img-responsive" alt=""/>
                 <div class="slide_content">
                     <div class="slide_content_wrap">
-                        <h1 class="title">Run Over<br>Everything</h1>
-                        <div class="button"><a href="#">See Details</a></div>
+                        <h1 class="title">Лучшая мебель</h1>
+                        <div class="button"><a href="#">Смотреть детали</a></div>
                     </div>
                 </div>
             </div>
@@ -168,17 +165,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </div>
 <div class="main">
     <div class="content-top">
-        <h2>snowboards</h2>
-        <p>hendrerit in vulputate velit esse molestie consequat, vel illum dolore</p>
+        <h2>Примеры мебели</h2>
+        <p>Мебель нашего производства является самой элегантной и стойкой</p>
         <div class="close_but"><i class="close1"> </i></div>
         <ul id="flexiselDemo3">
-            <li><img src={% static "images/board1.jpg" %}/></li>
-            <li><img src={% static "images/board2.jpg" %}/></li>
-            <li><img src={% static "images/board3.jpg" %}/></li>
-            <li><img src={% static "images/board4.jpg" %}/></li>
-            <li><img src={% static "images/board5.jpg" %}/></li>
+            <li><img src={% static "shop/img_src/furniture_1.png" %}/></li>
+            <li><img src={% static "shop/img_src/furniture_2.png" %}/></li>
+            <li><img src={% static "shop/img_src/furniture_3.png" %}/></li>
+            <li><img src={% static "shop/img_src/furniture_4.png" %}/></li>
+            <li><img src={% static "shop/img_src/furniture_5.png" %}/></li>
         </ul>
-        <h3>SnowBoard Extreme Series</h3>
         <script type="text/javascript">
             $(window).load(function () {
                 $("#flexiselDemo3").flexisel({
@@ -206,7 +202,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
             });
         </script>
-        <script type="text/javascript" src={% static "js/jquery.flexisel.js" %}></script>
+        <script type="text/javascript" src={% static "shop/js/jquery.flexisel.js" %}></script>
     </div>
 </div>
 <div class="content-bottom">
@@ -235,7 +231,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div class="row">
             <div class="col-md-3 top_box">
                 <div class="view view-ninth"><a href="single.html">
-                    <img src={% static "images/pic1.jpg" %} class="img-responsive" alt=""/>
+                    <img src={% static "shop/img_src/il_fullxfull.1191597103_1t1p.0.jpg" %} class="img-responsive"
+                         alt=""/>
                     <div class="mask mask-1"></div>
                     <div class="mask mask-2"></div>
                     <div class="content">
@@ -249,7 +246,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         </div>
         <div class="col-md-3 top_box">
             <div class="view view-ninth"><a href="single.html">
-                <img src={% static "images/pic2.jpg" %} class="img-responsive" alt=""/>
+                <img src={% static "shop/img_src/vidy_drevesiny_dlya_mebeli_403.jpg" %} class="img-responsive" alt=""/>
                 <div class="mask mask-1"></div>
                 <div class="mask mask-2"></div>
                 <div class="content">
@@ -262,7 +259,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         </div>
         <div class="col-md-3 top_box">
             <div class="view view-ninth"><a href="single.html">
-                <img src={% static "images/pic3.jpg" %} class="img-responsive" alt=""/>
+                <img src={% static "shop/img_src/mebel-iz-dereva-foto2-1024x768.jpg" %} class="img-responsive" alt=""/>
                 <div class="mask mask-1"></div>
                 <div class="mask mask-2"></div>
                 <div class="content">
@@ -273,9 +270,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <h4 class="m_4"><a href="#">nostrud exerci ullamcorper</a></h4>
             <p class="m_5">claritatem insitam</p>
         </div>
-        <div class="col-md-3 top_box1">
+        <div class="col-md-3 top_box">
             <div class="view view-ninth"><a href="single.html">
-                <img src={% static "images/pic4.jpg" %} class="img-responsive" alt=""/>
+                <img src={% static "shop/img_src/appealing-japanese-low-dining-table-furniture-room-classic-long-adorable-oriental-sets-with-square-wood-and-wicker-comboned-floor-chairs-single-side-armrest-contemporary-minimalist-japane_contemporary_797x465.jpg" %} class="img-responsive"
+                     alt=""/>
                 <div class="mask mask-1"></div>
                 <div class="mask mask-2"></div>
                 <div class="content">
