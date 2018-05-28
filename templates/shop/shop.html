@@ -64,19 +64,19 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <div class="container">
                 <div class="row shop_box-top">
                     {% for c in clothes %}
-                        <div class="col-md-3 shop_box"><a href="single.html">
+                        <div class="col-md-3 shop_box"><a href="{% url 'shop:cloth_detail' c.id %}">
                             <img src="{{ c.img.url }}" class="img-responsive" alt=""/>
                             <span class="new-box">
 					</span>
                             <span class="sale-box">
 					</span>
                             <div class="shop_desc">
-                                <h3><a href="#">{{ c.name }}</a></h3>
+                                <h3><a href="{% url 'shop:cloth_detail' c.id %}">{{ c.name }}</a></h3>
                                 <p>{{ c.description }}</p>
                                 <span class="reducedfrom">{{ c.reduced_from }}KZT</span>
                                 <span class="actual">{{ c.price }}KZT</span><br>
                                 <ul class="buttons">
-                                    <li class="shop_btn"><a href="#">Подробнее</a></li>
+                                    <li class="shop_btn"><a href="{% url 'shop:cloth_detail' c.id %}">Подробнее</a></li>
                                     <div class="clear"></div>
                                 </ul>
                             </div>
