@@ -7,7 +7,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>Yutariya</title>
+    {% block title %}
+        <title>Yutariya</title>
+    {% endblock %}
     {% load static from staticfiles %}
     <link href={% static "shop/css/bootstrap.css" %} rel='stylesheet' type='text/css'/>
     <link href={% static "shop/css/style.css" %} rel='stylesheet' type='text/css'/>
@@ -67,7 +69,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <div class="col-md-12">
                 <div class="header-left">
                     <div class="logo">
-                        <a href="{% url 'shop:index' %}"><img src={% static "shop/img_src/sofa_64.png" %} alt=""/></a>
+                        <a href="{% url 'shop:index' %}"><img src={% static "shop/samples/needle.png" %} alt=""/></a>
                     </div>
                     <div class="menu">
                         <a class="toggleMenu" href="#"><img src={% static "shop/images/nav.png" %} alt=""/></a>
@@ -86,7 +88,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <div class="search-box">
                         <div id="sb-search" class="sb-search">
                             <form>
-                                <input class="sb-search-input" placeholder="Enter your search term..." type="search"
+                                <input class="sb-search-input" placeholder="Введите ваш поисковой запрос..." type="search"
                                        name="search" id="search">
                                 <input class="sb-search-submit" type="submit" value="">
                                 <span class="sb-icon-search"> </span>
@@ -211,141 +213,68 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div class="container">
             <div class="row content_bottom-text">
                 <div class="col-md-7">
-                    <h3>The Mountains<br>Snowboarding</h3>
-                    <p class="m_1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
-                        euismod
-                        tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
-                        nostrud
-                        exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem
-                        vel
-                        eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu
-                        feugiat nulla facilisis at vero eros et accumsan et iusto odio.</p>
-                    <p class="m_2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
-                        euismod
-                        tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
-                        nostrud
-                        exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem
-                        vel
-                        eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu
-                        feugiat nulla facilisis at vero eros et accumsan et iusto odio.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="features">
-        <div class="container">
-            <h3 class="m_3">Преимущества</h3>
-            <div class="close_but"><i class="close1"> </i></div>
-            <div class="row">
-                <div class="col-md-3 top_box">
-                    <div class="view view-ninth"><a href="single.html">
-                        <img src={% static "shop/img_src/il_fullxfull.1191597103_1t1p.0.jpg" %} class="img-responsive"
-                             alt=""/>
-                        <div class="mask mask-1"></div>
-                        <div class="mask mask-2"></div>
-                        <div class="content">
-                            <h2>Hover Style #9</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing.</p>
-                        </div>
-                    </a></div
-                </div>
-                <h4 class="m_4"><a href="#">Удобная одежда</a></h4>
-            </div>
-            <div class="col-md-3 top_box">
-                <div class="view view-ninth"><a href="single.html">
-                    <img src={% static "shop/img_src/vidy_drevesiny_dlya_mebeli_403.jpg" %} class="img-responsive"
-                         alt=""/>
-                    <div class="mask mask-1"></div>
-                    <div class="mask mask-2"></div>
-                    <div class="content">
-                        <h2>Hover Style #9</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing.</p>
-                    </div>
-                </a></div>
-                <h4 class="m_4"><a href="#">Уникальный дизайн</a></h4>
-            </div>
-            <div class="col-md-3 top_box">
-                <div class="view view-ninth"><a href="single.html">
-                    <img src={% static "shop/img_src/mebel-iz-dereva-foto2-1024x768.jpg" %} class="img-responsive"
-                         alt=""/>
-                    <div class="mask mask-1"></div>
-                    <div class="mask mask-2"></div>
-                    <div class="content">
-                        <h2>Hover Style #9</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing.</p>
-                    </div>
-                </a></div>
-                <h4 class="m_4"><a href="#">Все для клиентов</a></h4>
-            </div>
-            <div class="col-md-3 top_box">
-                <div class="view view-ninth"><a href="single.html">
-                    <img src={% static "shop/img_src/appealing-japanese-low-dining-table-furniture-room-classic-long-adorable-oriental-sets-with-square-wood-and-wicker-comboned-floor-chairs-single-side-armrest-contemporary-minimalist-japane_contemporary_797x465.jpg" %} class="img-responsive"
-                         alt=""/>
-                    <div class="mask mask-1"></div>
-                    <div class="mask mask-2"></div>
-                    <div class="content">
-                        <h2>Hover Style #9</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing.</p>
-                    </div>
-                </a></div>
-                <h4 class="m_4"><a href="#">Большой выбор</a></h4>
-            </div>
-        </div>
-    </div>
-    </div>
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <ul class="footer_box">
-                        <h4>Продукты</h4>
-                        <li><a href="#">Современная мебель</a></li>
-                        <li><a href="#">Классическая мебель</a></li>
-                        <li><a href="#">Детская мебель</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <ul class="footer_box">
-                        <h4>Инфо</h4>
-                        <li><a href="#">Карьера и стажировка</a></li>
-                        <li><a href="#">Спонсоры</a></li>
-                        <li><a href="#">Команда</a></li>
-                        <li><a href="#">Скачать каталог</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <ul class="footer_box">
-                        <h4>Поддержка пользователей</h4>
-                        <li><a href="#">Свяжитесь с нами</a></li>
-                        <li><a href="#">Отправка и трэкер заказа</a></li>
-                        <li><a href="#">Легкий возврат средств</a></li>
-                        <li><a href="#">Гарантия</a></li>
-                        <li><a href="#">Ремонт</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <ul class="footer_box">
-                        <h4>Новости</h4>
-                        <div class="footer_search">
-                            <form>
-                                <input type="text" value="Введите ваш email" onfocus="this.value = '';"
-                                       onblur="if (this.value == '') {this.value = 'Введите ваш email';}">
-                                <input type="submit" value="Вперед">
-                            </form>
-                        </div>
-                        <ul class="social">
-                            <li class="facebook"><a href="#"><span> </span></a></li>
-                            <li class="twitter"><a href="#"><span> </span></a></li>
-                            <li class="instagram"><a href="#"><span> </span></a></li>
-                            <li class="pinterest"><a href="#"><span> </span></a></li>
-                            <li class="youtube"><a href="#"><span> </span></a></li>
-                        </ul>
+                    <h3>Yutaria Ltd.</h3>
+                    <p class="m_1">ТОО «Производственно инновационная компания «Ютария Ltd» создано в 2014 году в
+                        рамках Государственных программ«Дорожная карта бизнеса 2020» и ГПФИИР, благодаря проводимой
+                        Президентом РК политике по поддержке предпринимательства, с использованием механизмов
+                        субсидирования процентной ставки и гарантирования, исполнения обязательств перед АО «Фондом
+                        развития предпринимательства «Даму».
 
-                    </ul>
+                        Площадь производственного комплекса составляет свыше 7000 кв.м., включающий в себя
+                        производственные, вспомогательные, служебные, складские и административные помещения на участке
+                        в 2 га земли.Компания является национальным инвестором в развитии Свободной экономической зоны.
+
+                        Предприятие оснащено автоматизированным оборудованием фирмы «ZOJE», известного международного
+                        бренда, поставляющего на мировой рынок более 40% швейного и специализированного оборудования для
+                        предприятий легкой промышленности.</p>
                 </div>
             </div>
         </div>
     </div>
 {% endblock %}
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <ul class="footer_box">
+                    <h4>Инфо</h4>
+                    <li><a href="#">Карьера и стажировка</a></li>
+                    <li><a href="#">Спонсоры</a></li>
+                    <li><a href="#">Команда</a></li>
+                    <li><a href="#">Скачать каталог</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <ul class="footer_box">
+                    <h4>Поддержка пользователей</h4>
+                    <li><a href="#">Свяжитесь с нами</a></li>
+                    <li><a href="#">Отправка и трэкер заказа</a></li>
+                    <li><a href="#">Легкий возврат средств</a></li>
+                    <li><a href="#">Гарантия</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <ul class="footer_box">
+                    <h4>Новости</h4>
+                    <div class="footer_search">
+                        <form>
+                            <input type="text" value="Введите ваш email" onfocus="this.value = '';"
+                                   onblur="if (this.value == '') {this.value = 'Введите ваш email';}">
+                            <input type="submit" value="Вперед">
+                        </form>
+                    </div>
+                    <ul class="social">
+                        <li class="facebook"><a href="#"><span> </span></a></li>
+                        <li class="twitter"><a href="#"><span> </span></a></li>
+                        <li class="instagram"><a href="#"><span> </span></a></li>
+                        <li class="pinterest"><a href="#"><span> </span></a></li>
+                        <li class="youtube"><a href="#"><span> </span></a></li>
+                    </ul>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>

@@ -653,7 +653,7 @@ li.list_desc h4 a:hover {
 
 .content-bottom {
     width: 100%;
-    background: url(../img_src/UAX_7494.jpg) no-repeat center top;
+    background: url(../samples/main4.jpg) no-repeat center top;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -665,7 +665,7 @@ li.list_desc h4 a:hover {
 }
 
 .content_bottom-text h3 {
-    color: #FFF;
+    color: #000000;
     font-size: 3em;
     font-weight: 800;
     text-transform: uppercase;
@@ -674,15 +674,15 @@ li.list_desc h4 a:hover {
 }
 
 p.m_1 {
-    color: #FFF;
-    font-size: 0.85em;
+    color: #000000;
+    font-size: 0.99rem;
     line-height: 2.2em;
     margin-bottom: 6%;
 }
 
 p.m_2 {
-    color: #FFF;
-    font-size: 0.85em;
+    color: #000000;
+    font-size: 0.99rem;
     line-height: 2.2em;
 }
 
@@ -2453,7 +2453,11 @@ fieldset.input input[type="submit"]:hover {
     .
 
 register-top-grid(
-    margin-bottom: 20px;
+    margin-bottom:
+
+20px
+
+;
 )
     .nav {
         top: 66px;
