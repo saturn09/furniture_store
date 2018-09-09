@@ -21,3 +21,10 @@ class ShopDetailView(generic.DetailView):
     template_name = '../templates/shop/single.html'
     model = Cloth
     context_object_name = 'cloth'
+
+
+class ContactsView(generic.View):
+    template_name = '../templates/shop/contact.html'
+
+    def get(self, request, *args, **kwargs):
+        return render(request, template_name=self.template_name)

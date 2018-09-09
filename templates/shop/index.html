@@ -76,7 +76,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         <ul class="nav" id="nav">
                             <li><a href="{% url 'shop:store' %}">Магазин</a></li>
                             <li><a href="shop.html">Компания</a></li>
-                            <li><a href="contact.html">Контакты</a></li>
+                            <li><a href="{% url 'shop:contacts' %}">Контакты</a></li>
                             <div class="clear"></div>
                         </ul>
                         <script type="text/javascript" src={% static "shop/js/responsive-nav.js" %}></script>
@@ -239,7 +239,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 <ul class="footer_box">
                     <h4>Поддержка пользователей</h4>
                     <li><a href="#">Свяжитесь с нами</a></li>
-                    <li><a href="#">Отправка и трэкер заказа</a></li>
+                    <li><a href="#">Отправка и трекер заказа</a></li>
                     <li><a href="#">Легкий возврат средств</a></li>
                     <li><a href="#">Гарантия</a></li>
                 </ul>
